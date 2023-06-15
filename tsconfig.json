@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"module": "Node16",
+		"rootDir": "src",
+		"outDir": "lib",
+		"strict": true,
+		"strictBindCallApply": true,
+		"strictNullChecks": true,
+		"strictPropertyInitialization": true,
+		"strictFunctionTypes": true,
+		"noImplicitAny": true,
+		"skipLibCheck": true,
+		"declaration": true
+	}
+}

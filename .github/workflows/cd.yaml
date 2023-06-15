@@ -1,0 +1,22 @@
+name: Publish
+on:
+  release:
+    types: [published]
+jobs:
+  publish:
+    permissions:
+      contents: read
+      packages: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          run_install: true
+      - uses: actions/setup-node@v3
+        with:
+          cache: pnpm
+          registry-url: "https://registry.npmjs.org"
+      - run: pnpm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -1,0 +1,47 @@
+{
+	"name": "vue3-web-component",
+	"version": "1.0.0",
+	"description": "Create full vue3 apps inside embeddable components.",
+	"type": "module",
+	"exports": "./lib/index.js",
+	"types": "./lib/index.d.ts",
+	"scripts": {
+		"prepare": "husky install",
+		"lint": "eslint --ext .ts . && prettier --check .",
+		"lint:fix": "eslint --ext .ts . --fix && prettier --write .",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc"
+	},
+	"funding": [
+		{
+			"type": "github",
+			"url": "https://github.com/sponsors/Timeraa"
+		}
+	],
+	"repository": "https://github.com/Timeraa/vue3-web-component",
+	"keywords": [
+		"vue",
+		"vue3",
+		"web-component",
+		"css",
+		"embeddable",
+		"custom-element"
+	],
+	"author": "Timeraa",
+	"license": "MPL-2.0",
+	"peerDependencies": {
+		"vue": "^3.2.0"
+	},
+	"devDependencies": {
+		"@recodive/configs": "^1.1.1",
+		"@recodive/eslint-config": "^1.4.0",
+		"@rushstack/eslint-patch": "^1.3.1",
+		"commitlint": "^17.6.5",
+		"eslint": "^8.42.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^13.2.2",
+		"prettier": "^2.8.8",
+		"typescript": "^5.1.3"
+	},
+	"packageManager": "pnpm@8.6.2"
+}
