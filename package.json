@@ -1,5 +1,5 @@
 {
-	"name": "vue3-web-component",
+	"name": "@timeraa/vue3-web-component",
 	"version": "1.0.0",
 	"description": "Create full vue3 apps inside embeddable components.",
 	"type": "module",
